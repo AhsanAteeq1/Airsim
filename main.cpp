@@ -62,7 +62,7 @@ int main()
         client.enableApiControl(true);
         client.armDisarm(true);
         
-        auto lidar_data = client.getMagnetometerData();
+        auto lidar_data = client.getLidarData();
         std::cout << "Barometer data \n"
                   << "barometer_data.time_stamp \t" << barometer_data.time_stamp << std::endl
                   << "barometer_data.altitude \t" << barometer_data.altitude << std::endl
